@@ -1,0 +1,455 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body {
+	line-height: 1;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/* ------------------ */
+
+body {
+	background-color: #111428;
+	font-family: "Gilroy";
+	color: #ffffff;
+	padding: 0px 0px 0px 15%;
+}
+
+.header {
+	width: 120%;
+	height: 100px;
+	margin-bottom: 19px;
+	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+	left: -20%;
+}
+
+.logo__name {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 40px 0px 0px 0px;
+}
+
+.header__menu {
+	display: inline-block;
+	position: absolute;
+	left: 17%;
+}
+
+.header__list {
+	display: inline-block;
+}
+
+.header__list li {
+	display: inline-block;
+	position: relative;
+	padding: 40px 0 0 0px;
+}
+
+.header__link {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 22px;
+	text-transform: capitalize;
+	margin: 0px 1px 0px 40px;
+	position: relative;
+	left: 80%;
+}
+
+.header__list li::after {
+	position: relative;
+	left: 80%;
+	display: inline-block;
+	content: "";
+	background: url(../img/chevron-bottom.png) 0 0 no-repeat;
+	width: 12px;
+	height: 12px;
+}
+
+.form {
+	display: inline-block;
+	position: relative;
+	left: 65%;
+}
+
+.input__search {
+	width: 574px;
+	height: 41px;
+	border-radius: 5px;
+	background: #111428;
+	border: 1px solid #a3a3a3;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 10px;
+}
+
+.form__box {
+	display: inline-block;
+}
+
+.form__box::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	width: 18px;
+	height: 18px;
+	background: url("../img/search.png") 0 0 no-repeat;
+}
+
+.password__recovery,
+.password__enter,
+.page__registration {
+	text-align: center;
+	margin: 44px 0px 0px -10%;
+}
+.page__about {
+	color: #a3a3a3;
+	font-size: 14px;
+}
+
+.page__name {
+	color: #ffffff;
+	font-size: 38px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.text__help {
+	color: #64b369;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.password__recovery h2 {
+	margin-bottom: 19px;
+}
+
+.password__recovery p {
+	margin-bottom: 30px;
+}
+
+.input__recovery,
+.input__email,
+.input__password {
+	width: 384px;
+	height: 50px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.label__recovery {
+	line-height: 49px;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.label__recovery::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("../img/arrow-left.png") 0 0 no-repeat;
+	position: relative;
+	top: 5px;
+	right: 14px;
+}
+
+.button {
+	background-color: #337ab7;
+	color: #ffffff;
+	width: 384px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.label__button {
+	line-height: 19px;
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	color: #aeaeae;
+	margin-bottom: 30px;
+}
+
+.line {
+	width: 1700px;
+	height: 1px;
+	margin: 0 0 50px 0;
+	background-color: #ffffff;
+}
+
+.form__box1 p,
+.form2__box3 p,
+.form__box2 p {
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	margin-bottom: 20px;
+}
+
+.form__box1 a,
+.form2__reg3 a,
+.form2__box4 a,
+.form__box2 a {
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	margin-bottom: 20px;
+	color: #64b369;
+	padding-left: 10px;
+}
+
+.input__reg {
+	width: 384px;
+	height: 50px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	margin: 30px auto;
+	top: 5px;
+	right: 14px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.input__check,
+.input__radio {
+	margin-bottom: 30px;
+}
+
+.form2__reg2 {
+	display: inline-block;
+	position: relative;
+}
+
+.conteiner {
+	position: relative;
+}
+.form2__reg2 {
+	position: relative;
+	top: 0;
+	right: 90px;
+}
+
+.form2__reg3,
+.form2__reg3 p {
+	position: relative;
+	top: 0;
+	right: 45px;
+}
+
+.form__box2 p {
+	position: relative;
+	top: 0;
+	right: 20px;
+}
+.password__enter input {
+	margin-bottom: 30px;
+}
+
+/*стилизация*/
+
+.checkbox {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	margin: 0px 0px 32px 0px;
+}
+
+.checkbox__lebel {
+	display: inline-block;
+	padding: 0px 0px 0px 25px;
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.checkbox__lebel::before {
+	content: " ";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.checkbox__input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.checkbox__input:checked + .checkbox__lebel::after {
+	content: " ";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	background-color: #337ab7;
+	border-radius: 50%;
+}
+
+.option {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	margin: 0px 0px 30px 30px;
+	padding-left: 25px;
+	top: 0;
+	right: 0;
+}
+
+.option__input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.option__label {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+.option__label::before {
+	content: " ";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.option__input:checked + .option__label::after {
+	content: " ";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	background-color: #337ab7;
+	border-radius: 50%;
+}
