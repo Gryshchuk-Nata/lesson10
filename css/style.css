@@ -289,6 +289,7 @@ body {
 .form__box1 p,
 .form2__box3 p,
 .form__box2 p {
+	position: relative;
 	font-size: 18px;
 	font-weight: 500;
 	font-style: normal;
@@ -349,15 +350,19 @@ body {
 	right: 45px;
 }
 
-.form__box2 p {
-	position: relative;
-	top: 0;
-	right: 20px;
-}
 .password__enter input {
 	margin-bottom: 30px;
 }
 
+.form__box2 {
+	position: relative;
+}
+
+.form__reg3 {
+	position: relative;
+	top: 0;
+	left: 35px;
+}
 /*стилизация*/
 
 .checkbox {
@@ -452,4 +457,7 @@ body {
 	top: 3px;
 	background-color: #337ab7;
 	border-radius: 50%;
+}
+
+.button {
 }
